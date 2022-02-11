@@ -1,0 +1,3 @@
+kubectl create -f preset.yaml
+kubectl create -f pod.yaml
+kubectl get pod website -o yaml

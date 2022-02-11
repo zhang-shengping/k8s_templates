@@ -1,0 +1,8 @@
+kubectl cluster-info
+
+kubectl get nodes
+
+cluster/kubectl.sh describe pod nginx-deployment-f7ccf9478-hntgh
+
+[root@k8s kubernetes]# cluster/kubectl.sh taint node 127.0.0.1 node.kubernetes.io/disk-pressure:NoSchedule-
+node/127.0.0.1 untainted

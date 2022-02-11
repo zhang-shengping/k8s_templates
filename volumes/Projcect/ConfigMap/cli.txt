@@ -1,0 +1,5 @@
+kubectl create configmap ui-config --from-file=example/ui.properties
+kubectl get configmaps ui-config -o yaml
+
+kubectl --v=9 create -f /root/pzhang/volumes/Projcect/ConfigMap/pod.yaml
+kubectl.sh exec -it test-projected-volume -- /bin/sh
